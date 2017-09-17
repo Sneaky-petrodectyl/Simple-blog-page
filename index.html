@@ -2,25 +2,24 @@
 <html>
 <head>
 	<title>Blogsters | Ankit</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div id="header">
-		<ul id="menubar">
+		<ul class="menubar">
 			<li><a href="">Home</a></li>
 			<li><a href="">Profile</a></li>
 			<li><a href="">Notifications</a></li>
 			<li><a href="">About</a></li>
-			<form>
-				<input type="text" name="search" placeholder="Search..">
-			</form>
+			<input id="searchbar" type="text" name="search" placeholder="Search..">
 		</ul>
-		<hr>
 	</div>
-	<div id=container>
-		<div id="profileIntro">	
-			<img src=" " alt=" ">
+	<div class=container>
+		<div class="profileIntro">	
+			<img id="ppic" src="https://scontent.fbom3-1.fna.fbcdn.net/v/t1.0-9/20729399_1937026576574746_1744876215787266560_n.jpg?oh=29b33e80154adcc8345d0706968c9733&oe=5A542C46" alt=" ">
 			<h1>Ankit Sharma</h1>
 			<p id="date"></p>
+			<hr>
 		</div>
 		<div>
 			<a href="">a</a>
@@ -33,7 +32,7 @@
 		</div>
 		<hr>
 	</div>
-	<div id=footer>
+	<div class=footer>
 		<a href="">a</a>
 		<a href="">a</a>
 		<a href="">a</a>
@@ -41,5 +40,8 @@
 		<a href="">a</a>
 		<a href="">a</a>
 	</div>
+	<script type="text/javascript">
+		document.getElementById('date').innerHTML = Date();
+	</script>
 </body>
 </html>
